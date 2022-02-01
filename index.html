@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- muestra el sitio correctamente según el dispositivo del usuario -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Reto 2 | Calculator app</title>
+
+    <!-- Siéntase libre de eliminar estos estilos o personalizarlos en su propia hoja de estilo.👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content-body">
+
+        <div class="content-calculator">
+            <div class="">
+                    <h5>
+                        Calculator
+                    </h5>
+            </div>
+            <div id="outerContainer" class="">
+                <div id="buttonContainer">
+                    <div class="redButton"></div>
+                </div>
+
+                <div id="legendTextContainer">
+                    <div class="legendText" onclick="go_to_1()">1</div>
+                    <div class="legendText" onclick="go_to_2()">2</div>
+                    <div class="legendText" onclick="go_to_3()">3</div>
+                </div>
+            </div>
+
+            <div class="screen">
+                <input type="text" placeholder="0" disabled id="screen-result">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="7" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="8" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="9" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="+" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="4" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="5" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="6" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="-" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="1" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="2" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="3" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="*" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="0" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="/" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius btn-clean">
+                <input type="button" value="C" class="clean" onclick="clean()">
+            </div>
+            <div class="btn-cal btn-cal-radius btn-equal">
+                <input type="button" value="=" class="equal" onclick="calculate()">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="attribution">
+        Coded by <a href="#">Luis Garcia</a>.
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
